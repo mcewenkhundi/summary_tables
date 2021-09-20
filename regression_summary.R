@@ -12,6 +12,8 @@ t1
 
 #export to word
 #you can .rtf in word
+# install the gt package
+
 t1 %>%
   as_gt() %>%
   gt::gtsave(filename = here::here("regresion_table.rtf"))
