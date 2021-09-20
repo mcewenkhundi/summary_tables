@@ -10,3 +10,7 @@ trial2 <- trial %>% select(age, grade, response, trt)
 # summarize the data with our package
 table1 <- tbl_summary(trial2)
 table1
+
+table1 %>%
+  as_gt() %>%
+  gt::gtsave(filename = here::here("Baseline table.rtf"))
