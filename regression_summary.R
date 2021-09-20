@@ -11,6 +11,7 @@ t1 <- tbl_regression(mod1, exponentiate = TRUE)
 t1
 
 #export to word
+#you can .rtf in word
 t1 %>%
   as_gt() %>%
   gt::gtsave(filename = here::here("regresion_table.rtf"))
